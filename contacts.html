@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.openstreetmap.org; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Контакты Форма: демонстрационная страница с картой Краснодара и формой заявки без отправки данных.">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>Контакты — Форма</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/pages.css">
+  <link rel="stylesheet" href="assets/shop.css">
+  <link rel="stylesheet" href="assets/icons.css">
+  <link rel="stylesheet" href="assets/privacy.css">
+  <link rel="stylesheet" href="assets/pages-preview.css">
+  <script src="assets/privacy.js" defer></script>
+  <script src="assets/pages-adapter.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div data-site-header></div>
+  <noscript><nav class="container fallback-nav" aria-label="Основная навигация"><a href="index.html">Форма · Главная</a><a href="index.html#collection">Каталог</a><a href="about.html">О компании</a><a href="contacts.html">Контакты</a></nav></noscript>
+  <main id="main">
+    <section class="container section contacts-intro page-heading">
+      <p class="eyebrow">Контакты · Краснодар</p>
+      <h1>Давайте обсудим<br>ваш интерьер.</h1>
+      <p class="lead">Любой дом начинается с идеи. Расскажите, какую мебель вы ищете.</p>
+    </section>
+
+    <section class="container contacts-layout" aria-label="Контактная информация и карта">
+      <div class="contacts-details">
+        <!-- TODO: замените номер, часы и адрес реальными контактами. До этого номер не является телефонной ссылкой. -->
+        <span class="contact-demo-label">Демо-контакты</span>
+        <div class="contact-item"><h2>Телефон</h2><p class="contact-phone">+7 (000) 000-00-00</p><span>Номер-заглушка</span></div>
+        <div class="contact-item"><h2>Время работы</h2><p>Пн–Сб · 10:00–19:00</p><span>Пример графика · уточнить перед запуском</span></div>
+        <div class="contact-item"><h2>Адрес</h2><p>Краснодар</p><span>Точный адрес салона пока не указан</span></div>
+        <button type="button" class="button action-control" data-request="Общий вопрос">Оставить заявку <span class="action-icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="m8 5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        <p class="contacts-details__hint">Заявки оформляются через корзину.<br>В этой сборке данные на сервер не отправляются.</p>
+      </div>
+      <div class="contacts-map">
+        <!-- Карта показывает центр Краснодара. Добавьте реальные координаты и маркер после получения адреса. -->
+        <div class="map-placeholder" data-map-placeholder><h2>Карта Краснодара</h2><p>Это внешняя карта OpenStreetMap. При загрузке её сервер получит IP-адрес и технические сведения браузера. Точный адрес салона пока не указан.</p><button class="privacy-button" type="button" data-enable-map>Разрешить и показать карту</button><a class="inline-link" href="cookies.html">О внешней карте и настройках</a></div>
+        <iframe title="Карта центра Краснодара — точный адрес салона не указан" hidden data-map-src="https://www.openstreetmap.org/export/embed.html?bbox=38.9478%2C45.0155%2C39.0185%2C45.0528&amp;layer=mapnik" loading="lazy" referrerpolicy="no-referrer"></iframe>
+        <div class="contacts-map__caption"><span>Краснодар · обзорная карта города</span><a href="https://www.openstreetmap.org/#map=13/45.0355/38.9753" target="_blank" rel="noopener noreferrer">Открыть карту <span class="action-icon action-control" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="m8 5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+      </div>
+    </section>
+
+    <aside class="container page-demo-note contacts-demo"><span class="eyebrow">Перед посещением</span><p>Это демонстрационная страница. На карте показан город, а не расположение салона. Телефон, график и точный адрес нужно заменить на настоящие данные.</p></aside>
+  </main>
+  <div data-site-footer></div>
+  <div data-request-dialog></div>
+</body>
+</html>

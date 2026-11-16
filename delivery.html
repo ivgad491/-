@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.openstreetmap.org; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Выбор города и способа получения мебели: курьер по Краснодару, самовывоз и межгород до грузового терминала транспортной компании.">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>Доставка и получение — Форма</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/shop.css">
+  <link rel="stylesheet" href="assets/icons.css">
+  <link rel="stylesheet" href="assets/privacy.css">
+  <link rel="stylesheet" href="assets/pages-preview.css">
+  <script src="assets/privacy.js" defer></script>
+  <script src="assets/pages-adapter.js" defer></script>
+  <script src="assets/app.js" defer></script>
+  <script src="assets/shop.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div data-site-header></div>
+  <noscript><nav class="container"><a href="index.html">Главная</a> · <a href="cart.html">Корзина</a></nav><p class="container noscript-message">Для поиска города включите JavaScript. Условия получения описаны ниже.</p></noscript>
+  <main id="main" class="container shop-main">
+    <header class="shop-heading">
+      <p class="eyebrow">ОТ ВАШЕЙ ИДЕИ — К ВАШЕМУ ДОМУ</p>
+      <h1>Доставка и получение</h1>
+      <p class="lead">Начните с города. Посмотрите варианты получения, затем переходите к выбору мебели.</p>
+    </header>
+    <aside class="shop-notice">Это предварительный выбор для тестовой заявки. Перевозчик, адрес терминала, стоимость и сроки требуют отдельного согласования. Оплата и бронирование перевозки на сайте не выполняются.</aside>
+    <div id="delivery-content" class="delivery-layout"><p class="loading-state">Загружаем выбор направления…</p></div>
+
+    <section class="delivery-steps" aria-labelledby="delivery-steps-title">
+      <p class="eyebrow">ТРИ ПРОСТЫХ ШАГА</p>
+      <h2 id="delivery-steps-title">Как проходит оформление</h2>
+      <div class="delivery-step-grid">
+        <article><span>01</span><h3>Город и получение</h3><p>Найдите город по первым буквам и выберите его вместе с регионом. Курьер доступен по Краснодару; межгород оформляется до грузового терминала ТК.</p></article>
+        <article><span>02</span><h3>Мебель и заявка</h3><p>Добавьте модели в корзину и заполните профиль. Выбранные город и способ получения сохранятся при переходе к оформлению.</p></article>
+        <article><span>03</span><h3>Согласование деталей</h3><p>Перед подтверждением нужно уточнить стоимость, подходящий терминал, сроки, упаковку, разгрузку и при необходимости подъём. Номер и статус заявки будут в личном кабинете.</p></article>
+      </div>
+    </section>
+
+    <section class="delivery-faq" aria-labelledby="delivery-faq-title">
+      <h2 id="delivery-faq-title">О чём важно знать</h2>
+      <details><summary>В другой город мебель привезут до двери?</summary><p>В текущем оформлении межгород предполагает получение на грузовом терминале транспортной компании. Доставка от терминала до адреса не включена. Её возможность и стоимость нужно согласовывать отдельно.</p></details>
+      <details><summary>Грузовой терминал — это обычный пункт выдачи?</summary><p>Кухня и другая крупная мебель требуют перевозчика и терминала, которые принимают такой груз. Обычный посылочный ПВЗ может не подходить по весу и габаритам. Поэтому конкретный адрес не подставляется автоматически.</p></details>
+      <details><summary>Почему на сайте нет точного тарифа?</summary><p>Стоимость зависит от направления, веса, габаритов, упаковки и дополнительных услуг. Эти данные пока не подключены к сервису перевозчика. Сумма в корзине включает только выбранную мебель и является демонстрационной.</p></details>
+      <details><summary>Можно ли забрать заказ в Краснодаре?</summary><p>При выборе Краснодара доступен вариант самовывоза. Возможность выдачи, точный адрес склада и время нужно подтвердить отдельно: настоящие данные компании пока не заполнены.</p></details>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <div data-request-dialog></div>
+</body>
+</html>

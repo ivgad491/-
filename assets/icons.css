@@ -1,0 +1,125 @@
+/* Круглый векторный шеврон заменяет диагональные типографские стрелки. */
+.action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 27px;
+  height: 27px;
+  min-width: 27px;
+  border: 1px solid rgba(93, 106, 76, .22);
+  border-radius: 50%;
+  background: rgba(109, 126, 85, .08);
+  color: inherit;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 0;
+  transition: background .2s, border-color .2s;
+}
+.action-icon svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  transition: transform .2s;
+}
+.button > .action-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .25);
+  font-size: 0;
+}
+.button--white > .action-icon,
+.button--light > .action-icon {
+  background: rgba(109, 126, 85, .08);
+  border-color: rgba(93, 106, 76, .25);
+}
+.button--light:hover > .action-icon {
+  background: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .25);
+}
+.button.action-control,
+.text-link.action-control {
+  gap: 18px;
+}
+.text-link > .action-icon,
+.product-request > .action-icon {
+  font-size: 0;
+}
+.product-request.action-control {
+  gap: 8px;
+}
+.product-request > .action-icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+}
+.round-arrow.action-icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-color: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .06);
+}
+.round-arrow.action-icon svg {
+  width: 19px;
+  height: 19px;
+}
+.button:hover > .action-icon svg,
+.text-link:hover > .action-icon svg,
+.product-request:hover > .action-icon svg,
+.category-card:hover .action-icon svg {
+  transform: translateX(1.5px);
+}
+.product-request:hover > .action-icon {
+  transform: none;
+}
+.hero-scroll .action-icon {
+  border-color: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .06);
+  width: 31px;
+  height: 31px;
+  min-width: 31px;
+}
+.action-icon--down svg {
+  transform: rotate(90deg);
+}
+.footer-info-link,
+.contacts-map__caption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-info-link > .action-icon {
+  width: 21px;
+  height: 21px;
+  min-width: 21px;
+  border-color: rgba(255, 255, 255, .25);
+  background: rgba(255, 255, 255, .06);
+}
+.footer-info-link > .action-icon svg {
+  width: 12px;
+  height: 12px;
+}
+@media (max-width: 760px) {
+  .button.action-control,
+  .text-link.action-control {
+    gap: 14px;
+  }
+  .product-request > .action-icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+  }
+  .category-bottom .round-arrow.action-icon {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .action-icon,
+  .action-icon svg {
+    transition: none;
+  }
+}
